@@ -33,7 +33,7 @@ app.use( bodyParser.json() );       // to support JSON-encoded bodies
 app.use(bodyParser.urlencoded({     // to support URL-encoded bodies
   extended: true
 }));
-var server = app.listen(3005,   function () {
+var server = app.listen(3000,   function () {
 
   var host = 'ec2-18-221-81-128.us-east-2.compute.amazonaws.com'
   var port = server.address().port
