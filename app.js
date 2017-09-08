@@ -49,4 +49,10 @@ app.get('/customer', function (req, res) {
 	  res.end(JSON.stringify(results));
 	});
 });
+app.post('/customers', function (req, res) {
+   connection.query('select * from new_table', function (error, results, fields) {
+	  if (error) throw error;
+	  res.end(JSON.stringify(results));
+	});
+});
 
